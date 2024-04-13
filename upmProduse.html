@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>UPM Project</title>
+    <link
+      rel="shortcut icon"
+      href="logo/upm-project-website-favicon-color.png"
+      type="image/x-icon"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <link rel="stylesheet" href="css/upm_css.css" />
+  </head>
+  <body>
+    <header class="mb-4 bgcss">
+      <div
+        class="container col-10 borderh d-flex flex-wrap align-items-center justify-content-center justify-content-md-between"
+      >
+        <div>
+          <img
+            src="logo/svg/upm-project-low-resolution-logo-color-on-transparent-background.png"
+            class="logo1"
+            alt="logo"
+            width="200"
+          />
+        </div>
+        <div class="d-flex justify-content-end" style="margin-left: auto">
+          <!--Icons from https://icons8.com/
+          <a href=""
+            ><img
+              src="IMG/icons8-united-kingdom-48.png"
+              alt="England"
+              id="stil"
+          /></a>-->
+          <a href="" class="icon2"
+            ><img src="IMG/phone_white_24dp.svg" alt="phone" />
+          </a>
+          <a href="contact.html" class="nav-link"
+            ><p class="icon2" style="margin-bottom: 0%">+40 771780762</p>
+            <p class="icon21" style="margin-bottom: 0%">+40 723326072</p>
+          </a>
+        </div>
+      </div>
+      <div class="alegere">
+        <a href="enupmProduse.html">EN</a>
+        <a href="itupmProduse.html">IT</a>
+      </div>
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg textstil"
+          aria-label="Fifth navbar example"
+        >
+          <div class="container justify-content-center">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample05"
+              aria-controls="navbarsExample05"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarsExample05"
+            >
+              <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link textstil"
+                    aria-current="page"
+                    >Acasa</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="upmProduse.html" class="nav-link textstil"
+                    >Produse</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="upmGalerie.html" class="nav-link textstil"
+                    >Galerie</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link textstil">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container pb-5 mb-5">
+        <h1 class="pb-5">U.P.M. PROJECT S.r.l.</h1>
+
+        <h3 class="pb-5">
+          Proiectare si constructie stante pentru deformarea tablei
+        </h3>
+
+        <h4 class="pb-3">
+          Tabla de otel, Tabla de aluminiu, Tabla de otel inoxidabil
+        </h4>
+        <ul>
+          <li>Ștanțe progresive;</li>
+          <li>Ștanțe traditionale (manual);</li>
+          <li>Ștanțe cu transfer;</li>
+          <li>Matrițe prototip;</li>
+          <li>Prelucrare mecanică terță parte;</li>
+          <li>Construire ștanțe cu proiect furnizat de client;</li>
+        </ul>
+        <!-- Stante produse cu poze-->
+      </div>
+      <div class="container d-fluid text-center align-items-sm-start px-2">
+        <div class="row">
+          <div class="col-lg-3 cprod">
+            <div
+              class="container d-flex flex-wrap justify-content-center py-2 border_produse"
+            >
+              <p>Ștanțe tradiționale cu baze turnate</p>
+            </div>
+            <div class="container d-flex flex-wrap justify-content-center mb-5">
+              <div class="row">
+                <div
+                  class="container d-flex flex-wrap justify-content-center col"
+                >
+                  <img
+                    src="IMG/produs1.png"
+                    class="pt-4"
+                    id="openImg"
+                    width="100%"
+                    alt="Stanta"
+                    onClick="swipe();"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 cprod">
+            <div
+              class="container d-flex flex-wrap justify-content-center py-2 border_produse"
+            >
+              <p>Ștanțe cu came pentru osaturi de caroserii auto</p>
+            </div>
+            <div class="container d-flex flex-wrap justify-content-center mb-5">
+              <div class="row">
+                <div
+                  class="container d-flex flex-wrap justify-content-center col"
+                >
+                  <img
+                    src="IMG/produs2.png"
+                    class="pt-4"
+                    id="openImg2"
+                    width="100%"
+                    alt="Stanta"
+                    onClick="swipe2();"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-fluid text-center align-items-sm-start px-2">
+        <div class="row">
+          <div class="col-lg-3 cprod">
+            <div
+              class="container d-flex flex-wrap justify-content-center py-2 border_produse"
+            >
+              <p>Linie de ștanțe cu transfer</p>
+            </div>
+            <div class="container d-flex flex-wrap justify-content-center mb-5">
+              <div class="row">
+                <div
+                  class="container d-flex flex-wrap justify-content-center col"
+                >
+                  <img
+                    src="IMG/produs3.png"
+                    class="pt-4"
+                    id="openImg3"
+                    width="100%"
+                    alt="Stanta"
+                    onClick="swipe3();"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 cprod">
+            <div
+              class="container d-flex flex-wrap justify-content-center py-2 border_produse"
+            >
+              <p>Ștanțe progresive</p>
+            </div>
+            <div class="container d-flex flex-wrap justify-content-center mb-5">
+              <div class="row">
+                <div
+                  class="container d-flex flex-wrap justify-content-center col"
+                >
+                  <img
+                    src="IMG/produs4.png"
+                    class="pt-4"
+                    id="openImg4"
+                    width="100%"
+                    alt="Stanta"
+                    onClick="swipe4();"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-fluid text-center align-items-sm-start px-2 mb-5">
+        <div class="row">
+          <div class="col-lg-3 cprod">
+            <div
+              class="container d-flex flex-wrap justify-content-center py-2 border_produse"
+            >
+              <p>Machete de control</p>
+            </div>
+            <div class="container d-flex flex-wrap justify-content-center mb-5">
+              <div class="row">
+                <div
+                  class="container d-flex flex-wrap justify-content-center col"
+                >
+                  <img
+                    src="IMG/produs5.png"
+                    class="pt-4"
+                    id="openImg5"
+                    width="100%"
+                    alt="Stanta"
+                    onClick="swipe5();"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container d-flex flex-wrap justify-content-center parteneri_style"
+      >
+        <h5>PARTENERI</h5>
+      </div>
+
+      <div class="container my-3">
+        <section class="customer-logos slider">
+          <div class="slide">
+            <img
+              style="background-color: hsl(233, 53%, 12%)"
+              src="https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white.png"
+              width="80"
+              alt="logo BMW"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="logo/svg/Daimler_AG-Logo.wine.svg"
+              alt="Daimler"
+              width="100"
+              alt="logo Daimler"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="logo/svg/Audi_Logo_2009.svg"
+              alt="audi"
+              width="100"
+              alt="Audi_Logo_2009"
+            />
+          </div>
+          <div class="slide">
+            <img
+              decoding="async"
+              class="aligncenter size-full wp-image-77415"
+              src="https://i0.wp.com/www.dafontfree.co/wp-content/uploads/2021/08/Porsche-Logo-Font-1.jpg?resize=1000%2C566"
+              alt="Porsche Logo Font -1"
+              width="100"
+              alt="logo Porsche"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="//upload.wikimedia.org/wikipedia/commons/thumb/1/14/Logo_Fiat_Chrysler_Automobiles.png/800px-Logo_Fiat_Chrysler_Automobiles.png"
+              decoding="async"
+              width="100"
+              data-file-width="5365"
+              data-file-height="2047"
+              alt="logo FCA"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://www.freepnglogos.com/uploads/vw-png-logo/vw-logo-transparent-png-1.png"
+              width="70"
+              alt="vw logo transparent png"
+            />
+          </div>
+          <div class="slide">
+            <img
+              style="background-color: hsl(0, 0%, 90%)"
+              src="https://logos-world.net/wp-content/uploads/2021/04/Opel-Logo.png"
+              width="100"
+              alt="logo Opel"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="py-3 bgcss">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="d-inline-flex align-items-center mb-2"
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <img
+                src="logo/svg/upm-project-low-resolution-logo-color-on-transparent-background.png"
+                alt="logo"
+                width="200"
+              />
+            </a>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                <a href="index.html" class="text1"> U.P.M.PROJECT S.r.l.</a>
+              </li>
+              <li class="mb-2">
+                <p>
+                  Str. Verii nr.4, ap.2, cod 500223 Brasov -
+                  (Romania)
+                </p>
+              </li>
+              <li class="mb-2">
+                <p>Tel. +40 771780762</p>
+                <p class="margtel">+40 723326072</p>
+              </li>
+              <li class="mb-2">
+                <p>e-mail: office@upmproject.ro</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 offset-lg-1 mb-3"></div>
+          <div class="col-6 col-lg-3 mb-3"></div>
+          <div class="col-6 col-lg-2 mt-lg-5">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2 ms-2">
+                <a href="index.html" class="nav-link">Acasa</a>
+              </li>
+              <li class="mb-2">
+                <a href="upmProduse.html" class="nav-link">Produse</a>
+              </li>
+              <li class="mb-2">
+                <a href="upmGalerie.html" class="nav-link">Galerie</a>
+              </li>
+              <li class="mb-2">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/upm_js.js"></script>
+  </body>
+</html>
